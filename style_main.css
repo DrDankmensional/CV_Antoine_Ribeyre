@@ -1,0 +1,123 @@
+html{
+    background-color: white;
+}
+
+*{
+    margin: 3px;
+}
+
+
+@media screen and (max-width:426px) {
+    
+    body{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    header{
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    .title{
+        flex: 3;
+        /* background-color: blueviolet; */
+    }
+
+    h1{
+        background-color: black;
+        width: 60%;
+        color: white;
+        
+    }
+
+    nav{
+        flex: 1;
+        background-color: rgb(43, 226, 119);
+        display: flex;
+        flex-flow: row wrap;
+        align-items: flex-end;
+    }
+
+    .lien{
+        background-color: brown;
+        flex: 1;
+        text-align: end;
+    }
+
+    .container{
+        flex: 3;
+        display: flex;
+        flex-direction: column;
+    }
+    section{
+        flex: 2;
+        background-color: red;
+    }
+
+
+    footer{
+        flex: 1;
+        background-color: rgb(200, 255, 0);
+    }
+
+
+}
+
+@media screen and (min-width:427px) and (max-width:768px) {
+    
+    body{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    header{
+        flex: 1;
+        background-color: yellow;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    h1{
+        flex: 3;
+        background-color: blueviolet;
+    }
+
+    nav{
+        flex: 1;
+        background-color: rgb(43, 226, 119);
+        display: flex;
+        flex-flow: row wrap;
+        align-items: flex-end;
+    }
+
+    a{
+        background-color: brown;
+        flex: 1;
+        text-align: center;
+    }
+
+    .container{
+        flex: 3;
+        display: flex;
+        flex-direction: row;
+    }
+  
+    section{
+        flex: 2;
+        background-color: red;
+    }
+
+
+    footer{
+        flex: 1;
+        background-color: blue;
+    }
+
+
+}
