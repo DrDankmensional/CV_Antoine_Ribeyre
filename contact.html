@@ -15,26 +15,61 @@
              <!-- Bloc Nav -->
             <nav>
                 <a class="lien" href="main.html">About me</a>
-                <a class="lien" href="formation.html">Formation</a>
                 <a class="lien" href="competence.html">Compétence</a>
                 <a class="lien" href="exp.html">Expérience</a>
+                <a class="lien" href="formation.html">Formation</a>
                 <a class="lien" href="contact.html">Contact</a>
             </nav>
         </header>
         <!-- Description -->
          <div class="container">
             <section>
+                <h2>Formulaire de Contact</h2>
+                <form>
+                    <div>
+                        <label for="prenom">Prénom</label><br>
+                        <input type="text" name="prenom" required>
+                    </div>
+                    <div>
+                        <label for="name">Nom</label><br>
+                        <input type="text" name="name" required>
+                    </div>
+                    <div>
+                        <label for="compagny">Entreprise</label><br>
+                        <input type="text" name="compagny">
+                    </div>
+                    <div>
+                        <label for="email">Email</label><br>
+                        <input type="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="phone">Telephone</label><br>
+                        <input type="number" name="phone" >
+                    </div>
+                    <div>
+                        <label for="message">Message</label><br>
+                        <textarea name="message" placeholder="Entrez votre message" rows="5"></textarea>
+                    </div>
+                </form>
                 
             </section>
             <footer>
                 <!-- Contact -->
-                <h2>Contact</h2>
-                <h5>Email</h5>
-                <p>antoineribeyremichaut@gmail.com</p>
-                <h5>Tel.</h5>
-                <p>06.85.11.62.10</p>
-                <h5><a herf="https://github.com/DrDankmensional" targer="_blank"> Github</a></h5>
-                <h5><a href="https://www.linkedin.com/in/antoine-ribeyre-michaut-b4b51117a/">LinkedIn</a></h5>
+                 <div class="contact">
+                    <h2>Contact</h2>
+                    <p class="contact_2">
+                        <span>Tel.:<br>+33.6.85.11.62.10<br></span>
+                        <span>Adresse:<br>
+                        rue de Civry,<br> 75016, Paris<br></span>
+                        <span>Email<br> antoineribeyremichaut@gmail.com</span>
+                    </p>
+                </div>
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="https://github.com/DrDankmensional" target="_blank"><img src="Image/Logo_Github.png"  height="70px" width="70px"></a>
+                    <a href="https://www.linkedin.com/in/antoine-ribeyre-michaut-b4b51117a/" target="_blank"><img src="Image/Logo_linkedin.png" height="70px" width="70px"></a>
+                    <a href="mailto:antoineribeyremichaut@gmail.com" target="_blank"><img src="Image/Logo_mail.png" height="70px" width="70px"></a>
+                </div>
             </footer>
         </div>
     </body>
