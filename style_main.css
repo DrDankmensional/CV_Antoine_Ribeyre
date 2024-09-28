@@ -34,7 +34,7 @@ html{
 }
 
 
-@media screen and (max-width:426px) {
+@media screen and (max-width:450px) {
     
     body{
         display: flex;
@@ -51,6 +51,7 @@ html{
 
     .title{
         flex: 5;
+
     }
 
     h1{
@@ -134,17 +135,21 @@ html{
         margin-top: 3%;
     }
 
-    input,textarea{
+    .bloc,textarea{
         width: 97%;
         background-color: #658684;
         border: solid 1px #2D3938;
         color: #000000;
     }
-
+    .envoi{
+        background-color: #658684;
+        border: solid 1px #2D3938;
+        width: 100px;
+        height: 30px;
+    }
     .comp{
         display: flex;
         flex-flow: row wrap;
-
     }
 
     .element{
@@ -162,11 +167,185 @@ html{
         margin-bottom: 5%;
     }
 
+    .space-invader { 
+        border: 2px solid #000000;
+        background-color: #000000;
+        float: left;
+        width: 0.01em; 
+        height: 0.01em; 
+        margin: 10px;
+      }
+      .space-invader_blanc { 
+        border: 2px solid #96B1B1;
+        background-color: #96B1B1;
+        float: left;
+        width: 0.01em; 
+        height: 0.01em; 
+        margin: 10px;
+      }
+
+    .space-invader-1 {
+        box-shadow:
+          0 0 0 .25em #000000,
+          0 .25em 0 .25em #000000,
+          -.625em .375em 0 .125em #000000,
+          .625em .375em 0 .125em #000000,
+          -.75em -.75em 0 0 #000000,
+          .75em -.75em 0 0 #000000,
+          -.5em -.5em 0 0 #000000,
+          .5em -.5em 0 0 #000000,
+          -.75em -.25em 0 0 #000000,
+          -.5em -.25em 0 0 #000000,
+          .5em -.25em 0 0 #000000,
+          .75em -.25em 0 0 #000000,
+          -1em 0 0 0 #000000,
+          -.75em 0 0 0 #000000,
+          .75em 0 0 0 #000000,
+          1em 0 0 0 #000000,
+          -1em .25em 0 0 #000000,
+          1em .25em 0 0 #000000,
+          -.75em .75em 0 0 #000000,
+          .75em .75em 0 0 #000000,
+          /* Left Arm */
+          1.25em .25em 0 0 #000000,
+          1.25em .5em 0 0 #000000,
+          1.25em .75em 0 0 #000000,
+          /* Right Arm */
+          -1.25em .25em 0 0 #000000,
+          -1.25em .5em 0 0 #000000,
+          -1.25em .75em 0 0 #000000,
+          /* Left Foot */
+          -.25em 1em 0 0 #000000,
+          -.5em 1em 0 0 #000000,
+          /* Right Foot */
+          .25em 1em 0 0 #000000,
+          .5em 1em 0 0 #000000;
+          scale: 45%;
+      }
+      .space-invader-blanc {
+        box-shadow:
+          0 0 0 .25em #96B1B1,
+          0 .25em 0 .25em #96B1B1,
+          -.625em .375em 0 .125em #96B1B1,
+          .625em .375em 0 .125em #96B1B1,
+          -.75em -.75em 0 0 #96B1B1,
+          .75em -.75em 0 0 #96B1B1,
+          -.5em -.5em 0 0 #96B1B1,
+          .5em -.5em 0 0 #96B1B1,
+          -.75em -.25em 0 0 #96B1B1,
+          -.5em -.25em 0 0 #96B1B1,
+          .5em -.25em 0 0 #96B1B1,
+          .75em -.25em 0 0 #96B1B1,
+          -1em 0 0 0 #96B1B1,
+          -.75em 0 0 0 #96B1B1,
+          .75em 0 0 0 #96B1B1,
+          1em 0 0 0 #96B1B1,
+          -1em .25em 0 0 #96B1B1,
+          1em .25em 0 0 #96B1B1,
+          -.75em .75em 0 0 #96B1B1,
+          .75em .75em 0 0 #96B1B1,
+          /* Left Arm */
+          1.25em .25em 0 0 #96B1B1,
+          1.25em .5em 0 0 #96B1B1,
+          1.25em .75em 0 0 #96B1B1,
+          /* Right Arm */
+          -1.25em .25em 0 0 #96B1B1,
+          -1.25em .5em 0 0 #96B1B1,
+          -1.25em .75em 0 0 #96B1B1,
+          /* Left Foot */
+          -.25em 1em 0 0 #96B1B1,
+          -.5em 1em 0 0 #96B1B1,
+          /* Right Foot */
+          .25em 1em 0 0 #96B1B1,
+          .5em 1em 0 0 #96B1B1;
+          scale: 45%;
+      }
+      
     
+    
+      @keyframes space-invader-1 {
+        50% {
+          box-shadow: 
+            0 0 0 .25em #000000,
+            0 .25em 0 .25em #000000,
+            -.625em .375em 0 .125em #000000,
+            .625em .375em 0 .125em #000000,
+            -.75em -.75em 0 0 #000000,
+            .75em -.75em 0 0 #000000,
+            -.5em -.5em 0 0 #000000,
+            .5em -.5em 0 0 #000000,
+            -.75em -.25em 0 0 #000000,
+            -.5em -.25em 0 0 #000000,
+            .5em -.25em 0 0 #000000,
+            .75em -.25em 0 0 #000000,
+            -1em 0 0 0 #000000,
+            -.75em 0 0 0 #000000,
+            .75em 0 0 0 #000000,
+            1em 0 0 0 #000000,
+            -1em .25em 0 0 #000000,
+            1em .25em 0 0 #000000,
+            -.75em .75em 0 0 #000000,
+            .75em .75em 0 0 #000000,
+            /* Left Arm */
+            1.25em 0 0 0 #000000,
+            1.25em -.25em 0 0 #000000,
+            1.25em -.5em 0 0 #000000,
+            /* Right Arm */
+            -1.25em 0 0 0 #000000, 
+            -1.25em -.25em 0 0 #000000, 
+            -1.25em -.5em 0 0 #000000, 
+            /* Left Foot */
+            -1em 1em 0 0 #000000, 
+            -1em 1em 0 0 #000000, 
+            /* Right Foot */
+            1em 1em 0 0 #000000, 
+            1em 1em 0 0 #000000;
+        }
+      }
+    
+      @keyframes space-invader-blanc {
+        50% {
+          box-shadow: 
+            0 0 0 .25em #96B1B1,
+            0 .25em 0 .25em #96B1B1,
+            -.625em .375em 0 .125em #96B1B1,
+            .625em .375em 0 .125em #96B1B1,
+            -.75em -.75em 0 0 #96B1B1,
+            .75em -.75em 0 0 #96B1B1,
+            -.5em -.5em 0 0 #96B1B1,
+            .5em -.5em 0 0 #96B1B1,
+            -.75em -.25em 0 0 #96B1B1,
+            -.5em -.25em 0 0 #96B1B1,
+            .5em -.25em 0 0 #96B1B1,
+            .75em -.25em 0 0 #96B1B1,
+            -1em 0 0 0 #96B1B1,
+            -.75em 0 0 0 #96B1B1,
+            .75em 0 0 0 #96B1B1,
+            1em 0 0 0 #96B1B1,
+            -1em .25em 0 0 #96B1B1,
+            1em .25em 0 0 #96B1B1,
+            -.75em .75em 0 0 #96B1B1,
+            .75em .75em 0 0 #96B1B1,
+            /* Left Arm */
+            1.25em 0 0 0 #96B1B1,
+            1.25em -.25em 0 0 #96B1B1,
+            1.25em -.5em 0 0 #96B1B1,
+            /* Right Arm */
+            -1.25em 0 0 0 #96B1B1, 
+            -1.25em -.25em 0 0 #96B1B1, 
+            -1.25em -.5em 0 0 #96B1B1, 
+            /* Left Foot */
+            -1em 1em 0 0 #96B1B1, 
+            -1em 1em 0 0 #96B1B1, 
+            /* Right Foot */
+            1em 1em 0 0 #96B1B1, 
+            1em 1em 0 0 #96B1B1;
+        }
+      }
 }
 
 
-@media screen and (min-width:427px) {
+@media screen and (min-width:450px) {
     
     body{
         display: flex;
@@ -183,14 +362,16 @@ html{
 
     .title{
         flex: 5;
+        display: flex;
+        flex-direction: row;
     }
 
     h1{
-        width: 150px;
+        width: 250px;
         background-color: #2D3938;
         color: white;
         font-family: ITC_cond;
-        font-size: 275%;
+        font-size: 350%;
         height: min-content;
         margin:0;
         padding-left:2% ; 
@@ -251,22 +432,41 @@ html{
 
     .contact{
         display: flex;
-        flex-direction: column;
+        flex-flow: column wrap;
+        width: 700px;
+    }
+    
+    .contact_2{
+        display: flex;
+        flex-flow: row wrap;
+        
+    }   
+
+    span{
+        flex: 1 1;
+        margin-right: 30px;
     }
 
     .logo{
         display: flex;
         flex-direction:column;
-        margin-top: 30px;
+
         margin-right: 20px;
-        margin-top: 3%;
+        scale: 70%;
+
     }
 
-    input,textarea{
+    .bloc,textarea{
         width: 97%;
         background-color: #658684;
         border: solid 1px #2D3938;
         color: #000000;
+    }
+    .envoi{
+        background-color: #658684;
+        border: solid 1px #2D3938;
+        width: 100px;
+        height: 30px;
     }
 
     .comp{
@@ -286,61 +486,193 @@ html{
     h5{    
         flex: 1 1 100%;
         text-align: center;
-        margin-top: 5%;
-        margin-bottom: 5%;
+        margin-top: 1%;
+        margin-bottom: 0%;
+        font-size: x-large;
     }
+    /* Space invader */
 
+    .space-invader { 
+        border: 2px solid #000000;
+        background-color: #000000;
+        float: left;
+        width: 0.01em; 
+        height: 0.01em; 
+        margin: 20px;
+      }
+      .space-invader_blanc { 
+        border: 2px solid #96B1B1;
+        background-color: #96B1B1;
+        float: left;
+        width: 0.01em; 
+        height: 0.01em; 
+        margin: 20px;
+      }
+
+    .space-invader-1 {
+        box-shadow:
+          0 0 0 .25em #000000,
+          0 .25em 0 .25em #000000,
+          -.625em .375em 0 .125em #000000,
+          .625em .375em 0 .125em #000000,
+          -.75em -.75em 0 0 #000000,
+          .75em -.75em 0 0 #000000,
+          -.5em -.5em 0 0 #000000,
+          .5em -.5em 0 0 #000000,
+          -.75em -.25em 0 0 #000000,
+          -.5em -.25em 0 0 #000000,
+          .5em -.25em 0 0 #000000,
+          .75em -.25em 0 0 #000000,
+          -1em 0 0 0 #000000,
+          -.75em 0 0 0 #000000,
+          .75em 0 0 0 #000000,
+          1em 0 0 0 #000000,
+          -1em .25em 0 0 #000000,
+          1em .25em 0 0 #000000,
+          -.75em .75em 0 0 #000000,
+          .75em .75em 0 0 #000000,
+          /* Left Arm */
+          1.25em .25em 0 0 #000000,
+          1.25em .5em 0 0 #000000,
+          1.25em .75em 0 0 #000000,
+          /* Right Arm */
+          -1.25em .25em 0 0 #000000,
+          -1.25em .5em 0 0 #000000,
+          -1.25em .75em 0 0 #000000,
+          /* Left Foot */
+          -.25em 1em 0 0 #000000,
+          -.5em 1em 0 0 #000000,
+          /* Right Foot */
+          .25em 1em 0 0 #000000,
+          .5em 1em 0 0 #000000;
+          scale: 75%;
+      }
+      .space-invader-blanc {
+        box-shadow:
+          0 0 0 .25em #96B1B1,
+          0 .25em 0 .25em #96B1B1,
+          -.625em .375em 0 .125em #96B1B1,
+          .625em .375em 0 .125em #96B1B1,
+          -.75em -.75em 0 0 #96B1B1,
+          .75em -.75em 0 0 #96B1B1,
+          -.5em -.5em 0 0 #96B1B1,
+          .5em -.5em 0 0 #96B1B1,
+          -.75em -.25em 0 0 #96B1B1,
+          -.5em -.25em 0 0 #96B1B1,
+          .5em -.25em 0 0 #96B1B1,
+          .75em -.25em 0 0 #96B1B1,
+          -1em 0 0 0 #96B1B1,
+          -.75em 0 0 0 #96B1B1,
+          .75em 0 0 0 #96B1B1,
+          1em 0 0 0 #96B1B1,
+          -1em .25em 0 0 #96B1B1,
+          1em .25em 0 0 #96B1B1,
+          -.75em .75em 0 0 #96B1B1,
+          .75em .75em 0 0 #96B1B1,
+          /* Left Arm */
+          1.25em .25em 0 0 #96B1B1,
+          1.25em .5em 0 0 #96B1B1,
+          1.25em .75em 0 0 #96B1B1,
+          /* Right Arm */
+          -1.25em .25em 0 0 #96B1B1,
+          -1.25em .5em 0 0 #96B1B1,
+          -1.25em .75em 0 0 #96B1B1,
+          /* Left Foot */
+          -.25em 1em 0 0 #96B1B1,
+          -.5em 1em 0 0 #96B1B1,
+          /* Right Foot */
+          .25em 1em 0 0 #96B1B1,
+          .5em 1em 0 0 #96B1B1;
+          scale: 75%;
+      }
+      
+    
+    
+      @keyframes space-invader-1 {
+        50% {
+          box-shadow: 
+            0 0 0 .25em #000000,
+            0 .25em 0 .25em #000000,
+            -.625em .375em 0 .125em #000000,
+            .625em .375em 0 .125em #000000,
+            -.75em -.75em 0 0 #000000,
+            .75em -.75em 0 0 #000000,
+            -.5em -.5em 0 0 #000000,
+            .5em -.5em 0 0 #000000,
+            -.75em -.25em 0 0 #000000,
+            -.5em -.25em 0 0 #000000,
+            .5em -.25em 0 0 #000000,
+            .75em -.25em 0 0 #000000,
+            -1em 0 0 0 #000000,
+            -.75em 0 0 0 #000000,
+            .75em 0 0 0 #000000,
+            1em 0 0 0 #000000,
+            -1em .25em 0 0 #000000,
+            1em .25em 0 0 #000000,
+            -.75em .75em 0 0 #000000,
+            .75em .75em 0 0 #000000,
+            /* Left Arm */
+            1.25em 0 0 0 #000000,
+            1.25em -.25em 0 0 #000000,
+            1.25em -.5em 0 0 #000000,
+            /* Right Arm */
+            -1.25em 0 0 0 #000000, 
+            -1.25em -.25em 0 0 #000000, 
+            -1.25em -.5em 0 0 #000000, 
+            /* Left Foot */
+            -1em 1em 0 0 #000000, 
+            -1em 1em 0 0 #000000, 
+            /* Right Foot */
+            1em 1em 0 0 #000000, 
+            1em 1em 0 0 #000000;
+        }
+      }
+    
+      @keyframes space-invader-blanc {
+        50% {
+          box-shadow: 
+            0 0 0 .25em #96B1B1,
+            0 .25em 0 .25em #96B1B1,
+            -.625em .375em 0 .125em #96B1B1,
+            .625em .375em 0 .125em #96B1B1,
+            -.75em -.75em 0 0 #96B1B1,
+            .75em -.75em 0 0 #96B1B1,
+            -.5em -.5em 0 0 #96B1B1,
+            .5em -.5em 0 0 #96B1B1,
+            -.75em -.25em 0 0 #96B1B1,
+            -.5em -.25em 0 0 #96B1B1,
+            .5em -.25em 0 0 #96B1B1,
+            .75em -.25em 0 0 #96B1B1,
+            -1em 0 0 0 #96B1B1,
+            -.75em 0 0 0 #96B1B1,
+            .75em 0 0 0 #96B1B1,
+            1em 0 0 0 #96B1B1,
+            -1em .25em 0 0 #96B1B1,
+            1em .25em 0 0 #96B1B1,
+            -.75em .75em 0 0 #96B1B1,
+            .75em .75em 0 0 #96B1B1,
+            /* Left Arm */
+            1.25em 0 0 0 #96B1B1,
+            1.25em -.25em 0 0 #96B1B1,
+            1.25em -.5em 0 0 #96B1B1,
+            /* Right Arm */
+            -1.25em 0 0 0 #96B1B1, 
+            -1.25em -.25em 0 0 #96B1B1, 
+            -1.25em -.5em 0 0 #96B1B1, 
+            /* Left Foot */
+            -1em 1em 0 0 #96B1B1, 
+            -1em 1em 0 0 #96B1B1, 
+            /* Right Foot */
+            1em 1em 0 0 #96B1B1, 
+            1em 1em 0 0 #96B1B1;
+        }
+      }
 }
 
 
 
   
-.space-invader { 
-    border: 2px solid #000000;
-    background-color: #000000;
-    float: left;
-    width: 0.01em; 
-    height: 0.01em; 
-    margin: 10px;
-  }
-  .space-invader-1 {
-    box-shadow:
-      0 0 0 .25em #000000,
-      0 .25em 0 .25em #000000,
-      -.625em .375em 0 .125em #000000,
-      .625em .375em 0 .125em #000000,
-      -.75em -.75em 0 0 #000000,
-      .75em -.75em 0 0 #000000,
-      -.5em -.5em 0 0 #000000,
-      .5em -.5em 0 0 #000000,
-      -.75em -.25em 0 0 #000000,
-      -.5em -.25em 0 0 #000000,
-      .5em -.25em 0 0 #000000,
-      .75em -.25em 0 0 #000000,
-      -1em 0 0 0 #000000,
-      -.75em 0 0 0 #000000,
-      .75em 0 0 0 #000000,
-      1em 0 0 0 #000000,
-      -1em .25em 0 0 #000000,
-      1em .25em 0 0 #000000,
-      -.75em .75em 0 0 #000000,
-      .75em .75em 0 0 #000000,
-      /* Left Arm */
-      1.25em .25em 0 0 #000000,
-      1.25em .5em 0 0 #000000,
-      1.25em .75em 0 0 #000000,
-      /* Right Arm */
-      -1.25em .25em 0 0 #000000,
-      -1.25em .5em 0 0 #000000,
-      -1.25em .75em 0 0 #000000,
-      /* Left Foot */
-      -.25em 1em 0 0 #000000,
-      -.5em 1em 0 0 #000000,
-      /* Right Foot */
-      .25em 1em 0 0 #000000,
-      .5em 1em 0 0 #000000;
-      scale: 40%;
-  }
+
 
   .space-invader.classic { 
     animation: 1s step-end infinite;
@@ -349,93 +681,6 @@ html{
 .space-invader-1.classic { 
   animation-name: space-invader-1;
 }
-  @keyframes space-invader-1 {
-    50% {
-      box-shadow: 
-        0 0 0 .25em #000000,
-        0 .25em 0 .25em #000000,
-        -.625em .375em 0 .125em #000000,
-        .625em .375em 0 .125em #000000,
-        -.75em -.75em 0 0 #000000,
-        .75em -.75em 0 0 #000000,
-        -.5em -.5em 0 0 #000000,
-        .5em -.5em 0 0 #000000,
-        -.75em -.25em 0 0 #000000,
-        -.5em -.25em 0 0 #000000,
-        .5em -.25em 0 0 #000000,
-        .75em -.25em 0 0 #000000,
-        -1em 0 0 0 #000000,
-        -.75em 0 0 0 #000000,
-        .75em 0 0 0 #000000,
-        1em 0 0 0 #000000,
-        -1em .25em 0 0 #000000,
-        1em .25em 0 0 #000000,
-        -.75em .75em 0 0 #000000,
-        .75em .75em 0 0 #000000,
-        /* Left Arm */
-        1.25em 0 0 0 #000000,
-        1.25em -.25em 0 0 #000000,
-        1.25em -.5em 0 0 #000000,
-        /* Right Arm */
-        -1.25em 0 0 0 #000000, 
-        -1.25em -.25em 0 0 #000000, 
-        -1.25em -.5em 0 0 #000000, 
-        /* Left Foot */
-        -1em 1em 0 0 #000000, 
-        -1em 1em 0 0 #000000, 
-        /* Right Foot */
-        1em 1em 0 0 #000000, 
-        1em 1em 0 0 #000000;
-    }
-  }
-  
-
-  .space-invader_blanc { 
-    border: 2px solid #96B1B1;
-    background-color: #96B1B1;
-    float: left;
-    width: 0.01em; 
-    height: 0.01em; 
-    margin: 10px;
-  }
-  .space-invader-blanc {
-    box-shadow:
-      0 0 0 .25em #96B1B1,
-      0 .25em 0 .25em #96B1B1,
-      -.625em .375em 0 .125em #96B1B1,
-      .625em .375em 0 .125em #96B1B1,
-      -.75em -.75em 0 0 #96B1B1,
-      .75em -.75em 0 0 #96B1B1,
-      -.5em -.5em 0 0 #96B1B1,
-      .5em -.5em 0 0 #96B1B1,
-      -.75em -.25em 0 0 #96B1B1,
-      -.5em -.25em 0 0 #96B1B1,
-      .5em -.25em 0 0 #96B1B1,
-      .75em -.25em 0 0 #96B1B1,
-      -1em 0 0 0 #96B1B1,
-      -.75em 0 0 0 #96B1B1,
-      .75em 0 0 0 #96B1B1,
-      1em 0 0 0 #96B1B1,
-      -1em .25em 0 0 #96B1B1,
-      1em .25em 0 0 #96B1B1,
-      -.75em .75em 0 0 #96B1B1,
-      .75em .75em 0 0 #96B1B1,
-      /* Left Arm */
-      1.25em .25em 0 0 #96B1B1,
-      1.25em .5em 0 0 #96B1B1,
-      1.25em .75em 0 0 #96B1B1,
-      /* Right Arm */
-      -1.25em .25em 0 0 #96B1B1,
-      -1.25em .5em 0 0 #96B1B1,
-      -1.25em .75em 0 0 #96B1B1,
-      /* Left Foot */
-      -.25em 1em 0 0 #96B1B1,
-      -.5em 1em 0 0 #96B1B1,
-      /* Right Foot */
-      .25em 1em 0 0 #96B1B1,
-      .5em 1em 0 0 #96B1B1;
-      scale: 40%;
-  }
 
   .space-invader_blanc.classic_blanc { 
     animation: 1s step-end infinite;
@@ -446,43 +691,4 @@ html{
     animation-name: space-invader-blanc;
   }
 
-  @keyframes space-invader-blanc {
-    50% {
-      box-shadow: 
-        0 0 0 .25em #96B1B1,
-        0 .25em 0 .25em #96B1B1,
-        -.625em .375em 0 .125em #96B1B1,
-        .625em .375em 0 .125em #96B1B1,
-        -.75em -.75em 0 0 #96B1B1,
-        .75em -.75em 0 0 #96B1B1,
-        -.5em -.5em 0 0 #96B1B1,
-        .5em -.5em 0 0 #96B1B1,
-        -.75em -.25em 0 0 #96B1B1,
-        -.5em -.25em 0 0 #96B1B1,
-        .5em -.25em 0 0 #96B1B1,
-        .75em -.25em 0 0 #96B1B1,
-        -1em 0 0 0 #96B1B1,
-        -.75em 0 0 0 #96B1B1,
-        .75em 0 0 0 #96B1B1,
-        1em 0 0 0 #96B1B1,
-        -1em .25em 0 0 #96B1B1,
-        1em .25em 0 0 #96B1B1,
-        -.75em .75em 0 0 #96B1B1,
-        .75em .75em 0 0 #96B1B1,
-        /* Left Arm */
-        1.25em 0 0 0 #96B1B1,
-        1.25em -.25em 0 0 #96B1B1,
-        1.25em -.5em 0 0 #96B1B1,
-        /* Right Arm */
-        -1.25em 0 0 0 #96B1B1, 
-        -1.25em -.25em 0 0 #96B1B1, 
-        -1.25em -.5em 0 0 #96B1B1, 
-        /* Left Foot */
-        -1em 1em 0 0 #96B1B1, 
-        -1em 1em 0 0 #96B1B1, 
-        /* Right Foot */
-        1em 1em 0 0 #96B1B1, 
-        1em 1em 0 0 #96B1B1;
-    }
-  }
   
